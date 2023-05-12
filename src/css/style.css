@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+@import url(./header.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    --blue-color:#25365d;
+    --shadow-color: #cae7f4;
+}
+
+body{
+    width: 100%;
+    background: url('/src/img/Header.png') top / 100vw 170vh no-repeat ;
+    font-size: 16px;
+    height: 300vh;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
