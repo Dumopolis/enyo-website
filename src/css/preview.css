@@ -1,0 +1,80 @@
+@keyframes macbookAnimation {
+  
+    0%{
+        transform: translate(10%,-10%);
+    }
+    100%{
+        transform: translate(-5%, 0%);
+    }
+    
+}
+
+.preview {
+    max-width: 1400px;
+    padding: 0 100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.preview__support-title {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    font-size: 8rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    color: #93aac9;
+    opacity: 0.3;
+    z-index: -1;
+    letter-spacing: .8rem;
+}
+
+.preview__main-title {
+    padding-top: calc(50px + 4rem);
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+
+.preview__text {
+    margin-top: 70px;
+    width: 60%;
+    line-height: 2rem;
+
+}
+
+.preview__list-items {
+    color: #93aac9;
+    margin-top: 60px;
+    list-style: none;
+    line-height: 2rem;
+}
+
+.preview__list-item{
+    vertical-align: middle;
+}
+
+.preview__list-item::before {
+    content: url('../img/checked.svg');
+    margin-right: 20px;
+    position: relative;
+    top:2px;
+}
+
+.preview__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: macbookAnimation 10s linear infinite both alternate;
+}
+
+.preview__button{
+    margin-top: 60px;
+}
+
+.preview__button:hover{
+    box-shadow: 0px 0px 20px var(--blue-color);
+}
+

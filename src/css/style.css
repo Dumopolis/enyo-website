@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 @import url(./header.css);
+@import url(./preview.css);
 
 
 *{
@@ -9,13 +10,13 @@
     font-family: 'Ubuntu', sans-serif;
     --blue-color:#25365d;
     --shadow-color: #cae7f4;
+    --main-color: #5a5a5a;
 }
 
 body{
-    width: 100%;
-    background: url('/src/img/Header.png') top / 100vw 170vh no-repeat ;
     font-size: 16px;
-    height: 300vh;
+    position: relative;
+    color: var(--main-color)
 }
 
 h1{
@@ -25,3 +26,39 @@ h1{
 h2{
     font-size: 2rem;
 }
+
+main{
+    min-height: 100vh;
+    height: 100%;
+}
+
+.background-image__header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+
+}
+.background-image__footer{
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    z-index: -1;
+
+}
+
+.button{
+    width: 220px;
+    height: 60px;
+    outline: none;
+    border: none;
+    padding: 0 40px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+.button-blue{
+    background-color: var(--blue-color);
+    color: white;
+}
+
